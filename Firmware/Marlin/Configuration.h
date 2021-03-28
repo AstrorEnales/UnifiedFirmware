@@ -20,7 +20,7 @@
 // Uncomment the define line for what board you have (V4.2.2 or V4.2.7)
 //===========================================================================
 //#define ENDER3_V422_BOARD    //Ender 3 with V4.2.2 Board
-//#define ENDER3_V427_BOARD    //Ender 3 with V4.2.7 Board
+#define ENDER3_V427_BOARD    //Ender 3 with V4.2.7 Board
 
 //#define ENDER3_V2_V422_BOARD //Ender 3 V2 with V4.2.2 Board
 //#define ENDER3_V2_V427_BOARD //Ender 3 V2 with V4.2.7 Board
@@ -45,7 +45,7 @@
 //#define ENDER3_V2_OEM
 //#define ENDER3_MAX_OEM
 //#define ENDER5_OEM
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // Ender 3 Specific Options
 
@@ -126,7 +126,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -41, -11, 0 }
 #endif
 
 
@@ -197,8 +197,8 @@
 //#define FAN_FIX
 
 // Use your own printer name - Uncomment both lines
-//#define CUSTOM_PRINTER_NAME
-//#define USER_PRINTER_NAME "CHANGE ME"
+#define CUSTOM_PRINTER_NAME
+#define USER_PRINTER_NAME "Ender 3"
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -239,7 +239,7 @@
 // There are 2 ways to connect the BL Touch to the V4.2.X boards - All on the 5 pin header or using 3 pins on the 5 pin header + Z Endstop port
 // For details on these 2 types of connections refer to our help center article here: https://support.th3dstudio.com/hc/product-information/3rd-party-control-boards/creality-boards/creality-v4-2-2-v4-2-7-board-bl-touch-wiring-options/
 // If you want to use the BL-Touch uncomment the BLTOUCH line below and uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // If you are using the 5 pin header for all the BL Touch connections, uncomment the below line
 //#define CREALITY_V42X_BLTOUCH_ON_5PIN
 
@@ -330,7 +330,7 @@
 
   #define DEFAULT_EJERK    5.0
 
-  #define SHOW_BOOTSCREEN
+  //#define SHOW_BOOTSCREEN
 
   #define EXTRUDERS 1
 
