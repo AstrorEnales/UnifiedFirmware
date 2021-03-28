@@ -433,13 +433,13 @@
   #define TEMP_SENSOR_PROBE 0
   #define TEMP_SENSOR_CHAMBER 0
 
-  #define DEFAULT_Kp 28.72
-  #define DEFAULT_Ki 2.62
-  #define DEFAULT_Kd 78.81
+  #define DEFAULT_Kp 17.68
+  #define DEFAULT_Ki 1.21
+  #define DEFAULT_Kd 64.84
   
-  #define DEFAULT_bedKp 462.10
-  #define DEFAULT_bedKi 85.47
-  #define DEFAULT_bedKd 624.59
+  #define DEFAULT_bedKp 143.48
+  #define DEFAULT_bedKi 26.72
+  #define DEFAULT_bedKd 513.67
 
   #define ENDSTOPPULLUPS
 
